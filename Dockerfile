@@ -21,7 +21,7 @@ RUN rm -rf node_modules && \
     apk add zip && \
     zip -r /app.zip /app
 
-# Dev-ready container - actual files will be mounted in
+# Dev-ready container - actual files will be mounted in salini
 FROM base AS dev
 CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]
 
